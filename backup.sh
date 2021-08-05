@@ -6,4 +6,9 @@ mysqldump --all-databases > /home/user/dbbackup.sql
 
 tar cvf - /home | gzip -9c > /home/backup.tar.gz
 /usr/bin/openssl des -in /home/backup.tar.gz -out /home/backup.sec
+
 rm -rf /home/backup.tar.gz
+
+cp /home/backup.sec YOUR_DEVICE # Edit this
+
+rm -rf /home/backup.sec
